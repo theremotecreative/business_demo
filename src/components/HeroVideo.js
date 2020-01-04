@@ -1,16 +1,18 @@
 import React from "react"
 
-const Video = ({ videoSrcURL, videoTitle }) => (
-  <div className="video">
-    <iframe
-      src={videoSrcURL}
-      title={videoTitle}
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      frameBorder="0"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allowFullScreen
-    />
-  </div>
+const HeroVideo = ({ videoSrcURL, videoTitle }) => (
+    <video
+        className="video-player"
+        height="100%"
+        width="100%"
+        loop
+        muted
+        autoPlay
+    >
+        <source
+        src="https://www.youtube.com/watch?v=QWfOdfub52k"
+        type="video/mp4"
+        />
+    </video>
 )
-export default Video
+export default HeroVideo
