@@ -53,6 +53,7 @@ const HeaderBackground = styled.header`
   width: 100%;
   background-color: transparent;
   transition-duration: .3s;
+  z-index: 10;
   @media (max-width:800px) {
     background-color: #2a2a2a;
   }
