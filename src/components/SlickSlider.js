@@ -56,7 +56,7 @@ export default class SlickSlider extends Component {
           <Slider {...settings}>
             {data.allWordpressWpTestimonial.edges.map(post => (
               <div>
-                <Testimonial>"{post.node.content}"</Testimonial>
+                <Testimonial dangerouslySetInnerHTML={{ __html: post.node.content }} />
                 <Name>{post.node.acf.reviewer_name}</Name>
                 <Meta>{post.node.acf.reviewer_meta}</Meta>
               </div>
