@@ -67,8 +67,6 @@ const SliderSection = styled.div`
     background-color: #fff;
     padding: 20px;
     margin-right: -50px;
-    display: flex;
-    align-items: center;
     z-index: 10;
 `
 
