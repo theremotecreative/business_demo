@@ -31,9 +31,11 @@ export default class SlickSlider extends Component {
       `
 
       const Name = styled.p`
-        font-size: 14px;
+        font-family: Lato;
+        font-size: 16px;
         font-weight: 700;
         text-align: center;
+        margin-bottom: 0;
       `
 
       const Meta = styled.p`
@@ -54,7 +56,7 @@ export default class SlickSlider extends Component {
           <Slider {...settings}>
             {data.allWordpressWpTestimonial.edges.map(post => (
               <div>
-                <Testimonial>"{post.node.title}"</Testimonial>
+                <Testimonial>"{post.node.content}"</Testimonial>
                 <Name>{post.node.acf.reviewer_name}</Name>
                 <Meta>{post.node.acf.reviewer_meta}</Meta>
               </div>
