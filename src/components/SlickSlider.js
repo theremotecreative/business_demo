@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { graphql } from 'gatsby'
+import { useStaticQuery, graphql } from "gatsby"
 import Slider from "react-slick";
 
 import './slick.css'
@@ -9,7 +9,7 @@ import './slick-custom.css'
 export default class SlickSlider extends Component {
 
   render() {
-      const data = graphql`
+      const data = useStaticQuery(graphql`
         query {
           allWordpressWpTestimonial {
             edges {
@@ -19,7 +19,7 @@ export default class SlickSlider extends Component {
             }
           }
         }
-      `
+      `)
 
       const settings = {
         dots: true,
