@@ -1,0 +1,19 @@
+/* cleaning up the slick slider */
+
+.slick-dots li button {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+.slick-dots li button:hover {
+    background-color: #999;
+}
+
+.slick-dots .slick-active button {
+    background-color: #333;
+}

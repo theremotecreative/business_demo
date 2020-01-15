@@ -62,13 +62,15 @@ const HeroContent = styled.div`
     z-index: 2;
     & h1 {
         color: #fff;
+        font-size: 3.5rem;
         margin-bottom: 10px;
-        line-height: 1.2em;
+        line-height: 1em;
+        max-width: 500px;
     }
     & p {
         font-family: Lato;
         color: #fff;
-        font-size: 20px;
+        font-size: 28px;
         max-width: 500px;
         line-height: 1.2em;
     }
