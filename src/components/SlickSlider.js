@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Slider from "react-slick";
+import styled from 'styled-components'
+import Slider from "react-slick"
 
 import './slick.css'
 import './slick-theme.css'
@@ -14,12 +15,31 @@ export default class SlickSlider extends Component {
           allWordpressWpTestimonial {
             edges {
               node {
-                title
+                content
+                acf {
+                  reviewer_meta
+                  reviewer_name
+                }
               }
             }
           }
         }
       `)
+
+      const Testimonial = styled.h3`
+        text-align: center;
+      `
+
+      const Name = styled.p`
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+      `
+
+      const Meta = styled.p`
+        font-size: 14px;
+        text-align: center;
+      `
 
       const settings = {
         dots: true,
@@ -34,7 +54,9 @@ export default class SlickSlider extends Component {
           <Slider {...settings}>
             {data.allWordpressWpTestimonial.edges.map(post => (
               <div>
-                <h3>{post.node.title}</h3>
+                <Testimonial>"{post.node.title}"</Testimonial>
+                <Name>{post.node.acf.reviewer_name}</Name>
+                <Meta>{post.node.acf.reviewer_meta}</Meta>
               </div>
             ))}          
           </Slider>
