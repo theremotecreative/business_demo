@@ -6,6 +6,7 @@ import StyledHeroSection from "../components/HeroSection"
 import HomeAbout from "../components/HomeAbout"
 import HomeServices from "../components/HomeServices"
 import HomeTestimonials from "../components/HomeTestimonials"
+import HomeContact from "../components/HomeContact"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <HomeAbout/>
     <HomeServices/>
     <HomeTestimonials/>
+    <HomeContact/>
   </Layout>
 )
 

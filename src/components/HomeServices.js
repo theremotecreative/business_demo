@@ -54,7 +54,7 @@ const HomeServices = () => (
 const ServicesSection = styled.div`
     width: 100%;
     padding: 120px 20px;
-    background-color: #f1f1f1;
+    background-color: #ddd;
     h2 {
         font-size: 2.25rem;
         color: #2a2a2a;

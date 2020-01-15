@@ -9,7 +9,9 @@ const HomeTestimonials = () => (
        <h2>Testimonials</h2>
        <TestimonialRow>
            <SliderSection>
-                <SlickSliderStyled />
+               <div>
+               <SlickSliderStyled />
+               </div>
            </SliderSection>
            <ImageCol>
                 <StyledImage />
@@ -47,6 +49,7 @@ const TestimonialSection = styled.div`
         font-size: 2.25rem;
         color: #2a2a2a;
         text-align: center;
+        margin-bottom: 60px;
     }
 `
 
@@ -64,6 +67,9 @@ const SliderSection = styled.div`
     background-color: #fff;
     padding: 20px;
     margin-right: -50px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
 `
 
 const ImageCol = styled.div`
