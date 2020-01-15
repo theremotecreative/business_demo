@@ -9,9 +9,7 @@ const HomeTestimonials = () => (
        <h2>Testimonials</h2>
        <TestimonialRow>
            <SliderSection>
-               <div>
                <SlickSliderStyled />
-               </div>
            </SliderSection>
            <ImageCol>
                 <StyledImage />
